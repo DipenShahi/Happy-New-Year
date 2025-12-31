@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="screen active" id="welcome">
+    <h1>Hey</h1>
+    <p>I made something just for you.</p>
+    <button onclick="goTo('message')">Open</button>
+</div>
+
+<div class="screen" id="message">
+    <p id="introText"></p>
+    <p id="loveTyping"></p>
+    <button onclick="goTo('letter')">Next</button>
+</div>
+
+<div class="screen" id="letter">
+    <h2>My Letter</h2>
+    <div id="letterText" class="letter-text"></div>
+
+    <img id="photo" src="wher.jpg" alt="A memory">
+
+    <button onclick="goTo('end')">Finish</button>
+</div>
+
+<div class="screen" id="end">
+    <p>Happy New Year.</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
